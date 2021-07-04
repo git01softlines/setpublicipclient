@@ -12,6 +12,14 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.2'
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.2'
 
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'IP set client',
+                'Implementation-Version': 1.0,
+                'Main-Class': 'Main'
+    }
 }
